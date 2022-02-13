@@ -1,11 +1,13 @@
-package com.geekbin.wikibook;
+package com.geekbin.wikibook.config;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.env.Environment;
 
+@ComponentScan("com.geekbin") // 手动指定 SpringBoot 项目扫描目录
 @SpringBootApplication
 public class WikibookApplication {
 
