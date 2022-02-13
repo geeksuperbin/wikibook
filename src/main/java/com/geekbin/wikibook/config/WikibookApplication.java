@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.env.Environment;
 
+//@ComponentScan({"com.geekbin","com.test"})  // 扫描多个包配置示例
 @ComponentScan("com.geekbin") // 手动指定 SpringBoot 项目扫描目录
 @SpringBootApplication
 public class WikibookApplication {
